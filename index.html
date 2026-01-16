@@ -36,7 +36,7 @@
           <h1 class="title is-1 publication-title">Off The Grid: Detection of Primitives for Feed-Forward 3D Gaussian Splatting</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Arthur Moreau, Richard Shaw, Michal Nazarczuk, Jisu Shin, Thomas Tanay, <br> Zhensong Zhang, Songcen Xu, Eduardo Pérez-Pellitero <br>
+              Richard Shaw, Youngkyoon Jang, Athanasios Papaioannou, Arthur Moreau, <br> Helisa Dhamo, Zhensong Zhang, Eduardo Pérez-Pellitero <br>
               <br> Huawei Noah's Ark Lab</span>
           </div>
 
@@ -117,14 +117,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Feed-forward 3D Gaussian Splatting (3DGS) models enable real-time scene generation but are hindered by suboptimal pixel-aligned primitive placement,
-            which relies on a dense, rigid grid and limits both quality and efficiency. We introduce a new feed-forward architecture that detects 3D Gaussian primitives
-            at a sub-pixel level, replacing the pixel grid with an adaptive, "Off The Grid" distribution. Inspired by keypoint detection, our multi-resolution decoder
-            learns to distribute primitives across image patches. This module is trained end-to-end with a 3D reconstruction backbone using self-supervised learning.
-            Our resulting pose-free model generates photorealistic scenes in seconds, achieving state-of-the-art novel view synthesis for feed-forward models. 
-            It outperforms competitors while using far fewer primitives, demonstrating a more accurate and efficient allocation that captures fine details and
-            reduces artifacts. Moreover, we observe that by learning to render 3D Gaussians, our 3D reconstruction backbone improves camera pose estimation, 
-            suggesting opportunities to train these foundational models without labels.
+            This work presents Interactive Conversational 3D Virtual Human (ICo3D), a method for generating an interactive, conversational, and photorealistic 3D human avatar. 
+            Based on multi-view captures of a subject, we create an animatable 3D face model and a dynamic 3D body model, both rendered by splatting Gaussian primitives. 
+            Once merged together, they represent a lifelike virtual human avatar suitable for real-time user interactions. 
+            We equip our avatar with an LLM for conversational ability. 
+            During conversation, the audio speech of the avatar is used as a driving signal to animate the face model, enabling precise synchronization. 
+            We describe improvements to our dynamic Gaussian models that enhance photorealism: SWinGS++ for body reconstruction and HeadGaS++ for face reconstruction, and provide as well a solution to merge the separate face and body models without artifacts. 
+            We also present a demo of the complete system, showcasing several use cases of real-time conversation with the 3D avatar. 
+            Our approach offers a fully integrated virtual avatar experience, supporting both oral and written form interactions in immersive environments. 
+            ICo3D is applicable to a wide range of fields, including gaming, virtual assistance, and personalized education, among others.
           </p>
         </div>
       </div>

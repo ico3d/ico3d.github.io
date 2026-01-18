@@ -324,12 +324,18 @@
       <!-- Image 1 -->
       <div class="method-figure">
         <p class="image-caption">
-          We fine-tune VGGT to predict and render 3D Gaussians in a
-           self-supervised loop that does not require 3D annotations for training.
+          <strong>Method Overview.</strong>
+          Users interact with the avatar via text or audio queries, processed by an LLM
+          to produce a textual answer, and then converted to audio. The audio speech
+          drives the head model HeadGaS++ while also determining the body dynamics through
+          procedural body animation. 3D Gaussians are generated at each timestep by both
+          the head and the body model SWinGS++, which are then integrated and rendered
+          from novel views, producing a free viewpoint video stream synchronized with
+          the audio speech.
         </p>
-        <img src="./assets/images/figure2_model.png"
+        <img src="./assets/images/overview_figure.png"
              class="teaser-image small-image"
-             alt="OffTheGrid pipeline"/>
+             alt="ICo3D method overview"/>
         
       </div>
 

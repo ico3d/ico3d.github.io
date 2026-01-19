@@ -284,11 +284,9 @@
       <div class="method-figure">
         <p class="image-caption">
           <strong>Method Overview.</strong>
-          Users interact with the avatar via text or audio queries, processed by an LLM
-          to produce a textual answer, then converted to audio. The speech
-          drives the head model (HeadGaS++) and determines the body dynamics through
-          procedural body animation (SWinGS++). 3D Gaussians for head and body are integrated and rendered
-          from novel views, producing free viewpoint video synchronized with audio speech.
+          Users interact with the avatar through text or audio queries, which are processed by a LLM to generate textual responses that are synthesized into speech.
+          The generated speech drives the animatable head model (HeadGaS++) and controls body motion via procedural animation (SWinGS++).
+          Head and body 3D Gaussians are integrated and rendered jointly, producing free-viewpoint video synchronized with the spoken audio.
         </p>
         <img src="./assets/images/overview_figure.png"
              class="teaser-image small-image"
@@ -300,7 +298,7 @@
       <div class="method-figure">
         <p class="image-caption">
           <strong>HeadGaS++ </strong>
-          is an extension of our work HeadGaS, which uses features extracted from input audio speech to drive the facial expressions.
+          is an extension of our animatable head model HeadGaS, which uses features extracted from audio speech to drive the facial expressions.
         </p>
         <img src="./assets/images/headgas_figure.png"
              class="teaser-image small-image"
@@ -312,8 +310,8 @@
       <div class="method-figure">
         <p class="image-caption">
           <strong>SWinGS++ </strong>
-          is an extension of our work SWinGS, using temporally-local dynamic MLPs on a sliding window basis.
-          The method is extended using a spatial-temporal encoder to help reconstruct larger or faster human movements.
+          is an extension of our 4DGS model SWinGS, which uses temporally-local MLPs on a sliding window basis.
+          The method is extended using a spatial-temporal encoder to better reconstruct human motion.
         </p>
         <img src="./assets/images/swings_figure.png"
              class="teaser-image small-image"

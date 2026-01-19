@@ -17,10 +17,20 @@ body {
   font-variant: small-caps;
 }
 
+/* Reduce spacing between sections */
+.section {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Smaller hero sections */
+.hero {
+  margin-bottom: 0.5rem;
+}
 
 .teaser .hero-body {
   padding-top: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 0.5rem;
 }
 
 .teaser {

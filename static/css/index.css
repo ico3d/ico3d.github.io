@@ -19,13 +19,13 @@ body {
 
 /* Reduce spacing between sections */
 .section {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 /* Smaller hero sections */
 .hero {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .teaser .hero-body {
